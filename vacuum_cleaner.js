@@ -126,7 +126,7 @@ setInterval(()=> {
 
   if (typeof response !== "undefined") {
     
-    if (battery < 15 || dust_container_available_volume < 20) {
+    if ( vacuum_cleaner_state != 4 && (battery < 15 || dust_container_available_volume < 20)) {
       vacuum_cleaner_state = 6
       state_name = "выключен"
     }
@@ -167,4 +167,4 @@ setInterval(()=> {
   }
  
 
-}, 2500);
+}, 1000);
