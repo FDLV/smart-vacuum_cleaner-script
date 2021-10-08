@@ -49,6 +49,8 @@ mqtt.on('message', (topic, message) => {
           response = message.toString()
           state_name = JSON.parse(response).name
           vacuum_cleaner_state = Number(JSON.parse(response).state)
+          mqtt.publish('base/state/vacuum_cleaner_state', vacuum_cleaner_state.toString())
+
 
           console.log("Получены новые данные с сервера\nСостояние пылесоса:", state_name+"\n")
       });
@@ -62,6 +64,8 @@ mqtt.on('message', (topic, message) => {
             response = message.toString()
             state_name = JSON.parse(response).name
             vacuum_cleaner_state = Number(JSON.parse(response).state)
+            mqtt.publish('base/state/vacuum_cleaner_state', vacuum_cleaner_state.toString())
+
 
             console.log("Получены новые данные с сервера\nСостояние пылесоса:", state_name+"\n")
         });
@@ -75,6 +79,8 @@ mqtt.on('message', (topic, message) => {
           response = message.toString()
           state_name = JSON.parse(response).name
           vacuum_cleaner_state = Number(JSON.parse(response).state)
+          mqtt.publish('base/state/vacuum_cleaner_state', vacuum_cleaner_state.toString())
+
 
           console.log("Получены новые данные с сервера\nСостояние пылесоса:", state_name+"\n")
       });
@@ -88,6 +94,8 @@ mqtt.on('message', (topic, message) => {
           response = message.toString()
           state_name = JSON.parse(response).name
           vacuum_cleaner_state = Number(JSON.parse(response).state)
+          mqtt.publish('base/state/vacuum_cleaner_state', vacuum_cleaner_state.toString())
+
 
           console.log("Получены новые данные с сервера\nСостояние пылесоса:", state_name+"\n")
       });
@@ -101,6 +109,8 @@ mqtt.on('message', (topic, message) => {
           response = message.toString()
           state_name = JSON.parse(response).name
           vacuum_cleaner_state = Number(JSON.parse(response).state)
+          mqtt.publish('base/state/vacuum_cleaner_state', vacuum_cleaner_state.toString())
+
 
           console.log("Получены новые данные с сервера\nСостояние пылесоса:", state_name+"\n")
       });
@@ -114,6 +124,8 @@ mqtt.on('message', (topic, message) => {
           response = message.toString()
           state_name = JSON.parse(response).name
           vacuum_cleaner_state = Number(JSON.parse(response).state)
+          mqtt.publish('base/state/vacuum_cleaner_state', vacuum_cleaner_state.toString())
+
 
           console.log("Получены новые данные с сервера\nСостояние пылесоса:", state_name+"\n")
       });
@@ -167,4 +179,4 @@ setInterval(()=> {
   }
  
 
-}, 1000);
+}, 5000);
