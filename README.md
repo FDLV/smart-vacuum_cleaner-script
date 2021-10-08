@@ -1,6 +1,6 @@
 # smart-vacuum_cleaner-script
 
-Скачиваем всё, нажав на "Download ZIP"
+Скачиваем всё, нажав на "Download ZIP"<br/>
 ![изображение](https://user-images.githubusercontent.com/52961821/136569276-cf816de4-fb8e-49ef-a7ce-159bec56ded4.png)
 
 Далее (если первые 4 пункта вы когда-либо делали, то делать их сейчас не надо :)):
