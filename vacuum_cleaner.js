@@ -19,10 +19,7 @@ else {
 let coeff = (Math.random() * (3 - 0) + 0).toFixed();
 coeff = Number(coeff);
 
-//Должно храниться на iot платформе
 //Состояние пылесоса
-// 1 - тихая уборка; 2 - стандартная уборка; 3 - интенсивная уборка; 4 - зарядка; 5 - возвращение на зарядку; 6 - выключен
-// let vacuum_cleaner_state = (Math.random() * (4 - 1) + 1).toFixed()
 let vacuum_cleaner_state
 let state_name
 let response
