@@ -169,7 +169,7 @@ setInterval(()=> {
    console.log("Осталось заряда батареи: " + battery + "%")
    console.log("Осталось свободного места в пылесборнике: " + dust_container_available_volume + " мл\n")
 
-   mqtt.publish('base/state/vacuum_cleaner_state', vacuum_cleaner_state.toString())
+   //mqtt.publish('base/state/vacuum_cleaner_state', vacuum_cleaner_state.toString())
    mqtt.publish('base/state/dust_container_available_volume', dust_container_available_volume.toString())
    mqtt.publish('base/state/battery', battery.toString())
    mqtt.end
